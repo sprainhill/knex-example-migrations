@@ -14,7 +14,6 @@ exports.up = function(knex) {
 
 exports.down = function(knex) {
     // undoing that change
-
     return knex.schema.dropTableIfExists('users');
   
 };
